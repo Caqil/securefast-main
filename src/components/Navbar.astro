@@ -1,0 +1,23 @@
+<nav
+  x-data="initNavbar()"
+  class="navbar is-fresh is-transparent no-shadow"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://securefast.app">
+        <img src="/img/logo/logo.svg" alt="" width="112" height="28" />
+      </a>
+    </div>
+    <div
+      id="navbar-menu"
+      class="navbar-menu is-static"
+      :class="{
+                'is-active': mobileOpen,
+                '': !mobileOpen
+            }"
+    >
+    </div>
+  </div>
+</nav>
